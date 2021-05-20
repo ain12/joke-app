@@ -41,7 +41,7 @@ let getWeatherInfo = (latitude, longitude) => {
 }
 
 let displayWeatherInfo = () => {
-    iconElement.innerHTML = `<img src="img/${icon}@2x.png"/>`;
+    iconElement.innerHTML = `<img class="icon" src="img/${icon}@2x.png"/>`;
     tempElement.innerHTML = `${value}°<span>C</span>`;
     descripElement.innerHTML = description;
     locationElement.innerHTML = `${city}, ${country}`;

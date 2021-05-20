@@ -7,43 +7,48 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <!--Styles link-->
     <link rel="stylesheet" href="css/styles.css">
     <title>Joke App</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container py-4 mx-auto">
         <div class="row">
-            <div class="col-md-12">
-                <h1>Best jokes in the market!</h1>
+            <div class="col-lg-12 main-text">
+                <h1><strong>Best jokes in the market!</strong></h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-5 joke-column my-1 mx-3">
+
                 <div class="get-joke">
-                    <h2>Ready?</h2>
-                    <button type="button" id="button" class="btn btn-dark">Click here</button>
-                </div>
-                <div class="random-joke">
+                    <h2 class="my-3"><strong>Ready?</strong></h2>
+                    <img class="clown-emoji" src="img/smiley_clown.svg" alt="clown emoji" srcset="">
+                    <button type="button" id="button" class="btn btn-info">Click here</button>
                     <p id="joke-content" class="answer"></p>
                 </div>
+
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-2 my-5 mx-3 weather-column">
                 <div class="get-weather">
-                    <h3>Weather</h3>
+                    <p class="my-3"><strong>Weather</strong></p>
                 </div>
                 <div id="notification"></div>
                 <div class="info">
-                    <div class="weather-icon">
+                    <div class="weather-icon my-2">
 
                     </div>
-                    <div class="description">
+                    <div class="description my-1">
                         <p>-</p>
                     </div>
-                    <div class="temperature">
+                    <div class="temperature my-1">
                         <p>-</p>
                     </div>
-                    <div class="location">
+                    <div class="location my-1">
                         <p>-</p>
                     </div>
                 </div>
