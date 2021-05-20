@@ -17,6 +17,6 @@ After this execution, you will get a copy of this project.
 - POSTMAN
 
 ## Demo
-![Demo] (img/demo.png)
+![Demo](img/demo.png)
 
 Website: [web] ( https://ain12.github.io/joke-app/)
