@@ -1,6 +1,6 @@
 const button = document.getElementById("button");
 const joke = document.getElementById("joke-content");
-const url = " https://icanhazdadjoke.com/";
+const url = "https://icanhazdadjoke.com/";
 const urlChuck = "https://api.chucknorris.io/jokes/random";
 
 button.addEventListener("click", getJoke = () => {
