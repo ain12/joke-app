@@ -27,4 +27,4 @@ In order to maintain your API Key secure, add the `apiKey.js` inside a `.gitigno
 ## Demo
 ![Demo](img/demo.png)
 
-Website: https://ain12.github.io/joke-app/
+Website:  https://ain12.github.io/joke-app/
