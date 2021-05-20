@@ -6,17 +6,17 @@ You will need to have a code editor installed in your PC.
 
 ## Install
 Open your terminal and clone this project:
-`https://github.com/ain12/joke-app.git`
+`git clone https://github.com/ain12/joke-app.git`
 After this execution, you will get a copy of this project.
 
 ## Tools
 - HTML5
 - CSS3
 - BOOTSTRAP 4.6.0
-- APIs from: [Chuck_Norris_Api](https://api.chucknorris.io/), [Dad_Jokes_Api] (https://icanhazdadjoke.com/) and [Weather_Api] (https://openweathermap.org/).
+- APIs from: https://api.chucknorris.io/, https://icanhazdadjoke.com/ and https://openweathermap.org/.
 - POSTMAN
 
 ## Demo
-![Demo] (/img/demo.png)
+![Demo] (img/demo.png)
 
 Website: [web] ( https://ain12.github.io/joke-app/)
