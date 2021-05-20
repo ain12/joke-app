@@ -1,10 +1,12 @@
+import { getApiKey } from "../apiKey.js";
+
 let iconElement = document.querySelector(".weather-icon");
 let descripElement = document.querySelector(".description p");
 let tempElement = document.querySelector(".temperature p");
 let locationElement = document.querySelector(".location p");
 let notiElement = document.getElementById("notification");
 
-let apiKey = "8e2da3f69f71ee19847e463ac6313b04";
+let apiKey = getApiKey();
 
 if ('geolocation' in navigator) {
     navigator.geolocation.getCurrentPosition(showPosition, showError);
@@ -24,25 +26,29 @@ function showPosition(position) {
 };
 
 let getWeatherInfo = (latitude, longitude) => {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`, {
-        headers: {
-            "Accept": "application/json"
-        }
-    })
-        .then(response => response.json())
-        .then(data => {
-            value = Math.floor(data.main.temp - 273);
-            icon = data.weather[0].icon;
-            description = data.weather[0].description;
-            city = data.name;
-            country = data.sys.country;
+    if (apiKey === "<API_KEY>") {
+        alert("Cannot access weather data due to security measures")
+    } else {
+        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`, {
+            headers: {
+                "Accept": "application/json"
+            }
         })
-        .then(() => displayWeatherInfo())
-}
+            .then(response => response.json())
+            .then(data => {
+                value = Math.floor(data.main.temp - 273);
+                icon = data.weather[0].icon;
+                description = data.weather[0].description;
+                city = data.name;
+                country = data.sys.country;
+            })
+            .then(() => displayWeatherInfo())
+    }
 
-let displayWeatherInfo = () => {
-    iconElement.innerHTML = `<img class="icon" src="img/${icon}@2x.png"/>`;
-    tempElement.innerHTML = `${value}°<span>C</span>`;
-    descripElement.innerHTML = description;
-    locationElement.innerHTML = `${city}, ${country}`;
+    let displayWeatherInfo = () => {
+        iconElement.innerHTML = `<img class="icon" src="img/${icon}@2x.png"/>`;
+        tempElement.innerHTML = `${value}°<span>C</span>`;
+        descripElement.innerHTML = description;
+        locationElement.innerHTML = `${city}, ${country}`;
+    }
 }
