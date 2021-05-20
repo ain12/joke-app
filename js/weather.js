@@ -24,7 +24,7 @@ function showPosition(position) {
 };
 
 let getWeatherInfo = (latitude, longitude) => {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`, {
+    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`, {
         headers: {
             "Accept": "application/json"
         }
