@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #0AC2D3;
+    background-image: url(../img/undraw_Celebration_re_kc9k.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right 120px;
+    background-size: 100vh;
+}
+
+
+.main-text {
+    color: #fff;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.joke-column, .weather-column {
+    background-color: #f7f7f7;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.get-joke {
+    height: 400px;
+}
+
+.get-joke h2 {
+    font-size: 3rem;
+    color: #2A8476;
+}
+
+.get-weather p {
+    color: #2A8476;
+    font-size: 1.3rem;
+}
+
+.clown-emoji {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.3rem;
+    width: 7rem;
+}
+
+#joke-content {
+    margin: 2rem 0.8rem;
+    color: #2A8476;
+    font-weight: 600;
+}
+
+.temperature {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.info {
+    color: #2A8476;
+}

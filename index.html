@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <!--Styles link-->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Joke App</title>
+</head>
+
+<body>
+    <div class="container py-4 mx-auto">
+        <div class="row">
+            <div class="col-lg-12 main-text">
+                <h1><strong>Best jokes in the market!</strong></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 joke-column my-1 mx-3">
+
+                <div class="get-joke">
+                    <h2 class="my-3"><strong>Ready?</strong></h2>
+                    <img class="clown-emoji" src="img/smiley_clown.svg" alt="clown emoji" srcset="">
+                    <button type="button" id="button" class="btn btn-info">Click here</button>
+                    <p id="joke-content" class="answer"></p>
+                </div>
+
+            </div>
+            <div class="col-lg-2 my-5 mx-3 weather-column">
+                <div class="get-weather">
+                    <p class="my-3"><strong>Weather</strong></p>
+                </div>
+                <div id="notification"></div>
+                <div class="info">
+                    <div class="weather-icon my-2">
+
+                    </div>
+                    <div class="description my-1">
+                        <p>-</p>
+                    </div>
+                    <div class="temperature my-1">
+                        <p>-</p>
+                    </div>
+                    <div class="location my-1">
+                        <p>-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap scipts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    </script>
+    <script src="js/joke.js"></script>
+    <script type="module" src="apiKey.js"></script>
+    <script type="module" src="js/weather.js"></script>
+</body>
+
+</html>
